@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 import {Navigator} from "./Navigator" ;
 
 
 const Navbar = ()=> {
     
-    const [navbar, setnavbar] = useState([
+    const navbar = [
        " HOME",
        " SALE",
        " HANDBAGS",
@@ -16,7 +16,7 @@ const Navbar = ()=> {
        " SERVICES",
        " CONTACT US",
 
-    ]);
+    ];
 
 return (
     <nav className="bg-[#66696b]">
