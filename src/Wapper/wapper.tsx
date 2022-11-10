@@ -13,9 +13,9 @@ interface Props {
 const Wapper: React.FC<Props> = (Images) => {
   const listProducts = Images.Images;
   return (
-    <div className="bg-[#212529]">
+    <div className="bg-[#212529] font-serif">
       <div className="space-y-10 container m-auto mb-10">
-        <h1 className="text-white text-3xl p-10 font-serif"> Tìm hiểu thêm</h1>
+        <h1 className="text-white text-3xl p-10 "> Tìm hiểu thêm</h1>
         <Swiper
           slidesPerView={4}
           spaceBetween={40}
@@ -47,7 +47,7 @@ const Wapper: React.FC<Props> = (Images) => {
           })}
         </Swiper>
       </div>
-      <div className="bg-[#43464a] h-1/2 w-full text-white text-2xl font-medium p-5">
+      <div className="bg-[#43464a] w-full text-white text-2xl font-medium p-5 pl-56">
         <h1>WELCOME TO MERCEDES</h1>
       </div>
     </div>

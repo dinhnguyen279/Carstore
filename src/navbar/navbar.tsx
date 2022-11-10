@@ -1,5 +1,5 @@
 // import React, {useState} from 'react';
-import { Navigator } from "./navigator";
+import { Navigator } from "./Navigator";
 
 const navbar = [
   " HOME",

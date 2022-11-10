@@ -31,23 +31,7 @@ const Mains = () => {
       price: "$100.000",
     },
   ];
-  const CarsTwo = [
-    {
-      image: "./images/Mer-S.png",
-      name: "S-Class",
-      price: "$100.000",
-    },
-    {
-      image: "./images/Maybach.png",
-      name: "MayBach S650",
-      price: "$100.000",
-    },
-    {
-      image: "./images/AMG-GT.png",
-      name: "AMG GT",
-      price: "$100.000",
-    },
-  ];
+
   return (
     <div className=" bg-[#212529]">
       <div className="p-5 container mx-auto w-full h-full grid grid-cols-3 grid-rows-3 gap-10">
@@ -76,31 +60,6 @@ const Mains = () => {
             </div>
           );
         })}
-        {/* {CarsTwo.map((value, key) => {
-        return (
-          <div
-            key={key}
-            className="text-center  text-zinc-50 border-[0.1rem] border-b-8 border-b-[#6a6c6ef0] border-zinc-50  hover:bg-[#43464a]"
-          >
-            <img
-              className="h-[50%] w-[100%] object-fill"
-              src={value.image}
-              alt=""
-            />
-            <div className="mt-14 ">
-              <h1 className="font-sans text-3xl mb-4">{value.name}</h1>
-              <div className="text-2xl">
-                <span>
-                  {value.price}
-                  <button className="border-2 w-32 rounded-lg bg-[#43464a] hover:bg-[#6a6c6ef0] ">
-                    BUY NOW
-                  </button>
-                </span>
-              </div>
-            </div>
-          </div>
-        );
-      })} */}
       </div>
     </div>
   );

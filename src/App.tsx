@@ -5,7 +5,6 @@ import Wapper from "./Wapper/wapper";
 import images from "./Wapper/data";
 import Main from "./Main/main";
 import Footer from "./Footer/footer";
-import End from "./End/last";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <Wapper Images={images} />
       <Main />
       <Footer />
-      <End />
     </div>
   );
 }

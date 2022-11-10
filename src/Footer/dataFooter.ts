@@ -1,6 +1,7 @@
 export const Items = [
   {
-    id: "MUA XE",
+    id: 1,
+    title: "MUA XE",
     name: "Xe đã qua sử dụng",
     name1: "Xe mới",
     name2: "Chọn cấu hình xe",
@@ -8,21 +9,24 @@ export const Items = [
   },
 
   {
-    id: "DỊCH VỤ",
+    id: 2,
+    title: "DỊCH VỤ",
     name: "Đặt lịch lái thử",
     name1: "Ưu đãi đặc biệt",
     name2: "Phụ kiện chính hãng",
     name3: "Yêu cầu tư vấn",
   },
   {
-    id: "CÁC DÒNG XE",
+    id: 3,
+    title: "CÁC DÒNG XE",
     name: "SUV",
     name1: "Sedan",
     name2: "Mercedes-AMG",
     name3: "Mercedes-Maybach",
   },
   {
-    id: "GIỚI THIỆU",
+    id: 4,
+    title: "GIỚI THIỆU",
     name: "Liên hệ",
     name1: "Câu chuyện của chúng tôi",
     name2: "Phát triển bền vững & tương lai",
