@@ -1,51 +1,97 @@
 const Mains = () => {
-  const Cars = [
+  const CarsOne = [
     {
-      id: "./images/EClass.png",
+      image: "./images/EClass.png",
       name: "E-Class",
       price: "$100.000",
     },
     {
-      id: "./images/g63.png",
+      image: "./images/g63.png",
       name: "G63 AMG ",
       price: "$100.000",
     },
     {
-      id: "./images/GLC300.png",
+      image: "./images/GLC300.png",
       name: "GLC 300",
       price: "$100.000",
     },
     {
-      id: "./images/Mer-S.png",
+      image: "./images/Mer-S.png",
       name: "S-Class",
       price: "$100.000",
     },
     {
-      id: "./images/Maybach.png",
+      image: "./images/Maybach.png",
       name: "MayBach S650",
       price: "$100.000",
     },
     {
-      id: "./images/AMG-GT.png",
+      image: "./images/AMG-GT.png",
+      name: "AMG GT",
+      price: "$100.000",
+    },
+  ];
+  const CarsTwo = [
+    {
+      image: "./images/Mer-S.png",
+      name: "S-Class",
+      price: "$100.000",
+    },
+    {
+      image: "./images/Maybach.png",
+      name: "MayBach S650",
+      price: "$100.000",
+    },
+    {
+      image: "./images/AMG-GT.png",
       name: "AMG GT",
       price: "$100.000",
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-x-14 gap-y-10 pt-12 pb-16 px-60 bg-[#212529] ">
-      {Cars.map((value, key) => {
+    <div className=" bg-[#212529]">
+      <div className="p-5 container mx-auto w-full h-full grid grid-cols-3 grid-rows-3 gap-10">
+        {CarsOne.map((value, key) => {
+          return (
+            <div
+              key={key}
+              className="text-center text-zinc-50 border-2 border-b-8 border-b-[#6a6c6ef0] border-zinc-50  hover:bg-[#43464a]"
+            >
+              <div className="w-full h-10">
+                <h1 className="font-sans text-3xl">{value.name}</h1>
+                <div className="text-2xl">
+                  <span>
+                    {value.price}
+                    <button className="border-2 w-32 rounded-lg bg-[#43464a] hover:bg-[#6a6c6ef0] ">
+                      BUY NOW
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <img
+                className="max-w-xs max-h-28 object-cover block overflow-auto"
+                src={value.image}
+                alt="Hình minh họa"
+              />
+            </div>
+          );
+        })}
+        {/* {CarsTwo.map((value, key) => {
         return (
-          <div className="text-center  text-zinc-50 border-[0.1rem] border-b-8 border-b-[#6a6c6ef0] border-zinc-50  hover:bg-[#43464a]">
+          <div
+            key={key}
+            className="text-center  text-zinc-50 border-[0.1rem] border-b-8 border-b-[#6a6c6ef0] border-zinc-50  hover:bg-[#43464a]"
+          >
             <img
               className="h-[50%] w-[100%] object-fill"
-              src={value.id}
+              src={value.image}
               alt=""
             />
             <div className="mt-14 ">
               <h1 className="font-sans text-3xl mb-4">{value.name}</h1>
               <div className="text-2xl">
                 <span>
-                  {value.price}{" "}
+                  {value.price}
                   <button className="border-2 w-32 rounded-lg bg-[#43464a] hover:bg-[#6a6c6ef0] ">
                     BUY NOW
                   </button>
@@ -54,7 +100,8 @@ const Mains = () => {
             </div>
           </div>
         );
-      })}
+      })} */}
+      </div>
     </div>
   );
 };

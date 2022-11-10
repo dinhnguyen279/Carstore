@@ -15,16 +15,16 @@ const Header = () => {
           </a>
         </div>
         <form
-          className="relative w-full h-full flex justify-center items-center space-x-2"
+          className=" w-full h-full flex justify-center items-center space-x-2 "
           role="search"
         >
           <input
             type="search"
             placeholder="Search"
             aria-label="Search"
-            className="w-2/5 h-8 rounded-md outline-none text-black px-2"
+            className="w-2/5 h-8 rounded-md outline-none text-black px-10"
           />
-          <button className="w-10 border-2 rounded-lg hover:border-gray-500">
+          <button className="border hover:border-gray-500">
             <i
               className="fa fa-search text-xl text-white hover:text-gray-600"
               aria-hidden="true"
