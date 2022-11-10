@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="bg-[#212529]">
+    <div className="bg-[#212529]">
       <div className="flex justify-between items-center container mx-auto p-4">
         <div className="absolute">
           <a className="flex justify-center items-center space-x-4" href="/">
@@ -24,7 +24,7 @@ const Header = () => {
             aria-label="Search"
             className="w-2/5 h-8 rounded-md outline-none text-black px-10"
           />
-          <button className="border hover:border-gray-500">
+          <button>
             <i
               className="fa fa-search text-xl text-white hover:text-gray-600"
               aria-hidden="true"
@@ -36,7 +36,7 @@ const Header = () => {
           aria-hidden="true"
         ></i>
       </div>
-    </header>
+    </div>
   );
 };
 
