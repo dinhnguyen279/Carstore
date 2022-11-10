@@ -1,5 +1,4 @@
-// import React, {useState} from 'react';
-import { Navigator } from "./Navigator";
+import Navigator from "./Navigator";
 
 const navbar = [
   " HOME",
@@ -18,7 +17,7 @@ const Navbar = () => {
     <nav className="bg-[#66696b] absolute top-15 left-0 right-0">
       <ul className=" flex justify-between flex-wrap text-zinc-50 container mx-auto px-5 py-2 overflow-hidden ">
         {navbar.map((value, key) => {
-          return <Navigator text={value} key={key} />;
+          return <Navigator text={value} key={key + 1} />;
         })}
       </ul>
     </nav>

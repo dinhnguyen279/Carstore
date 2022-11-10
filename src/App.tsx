@@ -1,10 +1,11 @@
-import Navbar from "./Navbar/navbar";
-import Introduce from "./Introduce/introduce";
-import Wapper from "./Wapper/wapper";
-import images from "./Wapper/data";
-import Main from "./Main/main";
-import Footer from "./Footer/footer";
-import Header from "./Header/header";
+import React from "react";
+import Footer from "./Footers/Footer";
+import Header from "./Headers/Header";
+import Introduce from "./Introduces/Introduce";
+import Mains from "./Menu/Main";
+import Navbar from "./Nav/Navbar";
+import images from "./Wappers/data";
+import Wapper from "./Wappers/Wapper";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <Introduce />
       <Wapper Images={images} />
-      <Main />
+      <Mains />
       <Footer />
     </div>
   );

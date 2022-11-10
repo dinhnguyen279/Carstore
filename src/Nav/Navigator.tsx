@@ -1,4 +1,4 @@
-export const Navigator = ({ text }: { text: string }) => {
+const Navigator = ({ text }: { text: string }) => {
   return (
     <li className="font-serif hover:-rotate-6 transition ease-linear">
       <a href="/" className="hover:text-black">
@@ -7,3 +7,4 @@ export const Navigator = ({ text }: { text: string }) => {
     </li>
   );
 };
+export default Navigator;

@@ -1,5 +1,5 @@
 import { Items } from "./dataFooter";
-const Foo = () => {
+const Footer = () => {
   return (
     <>
       <footer className="flex text-2xl bg-[#66696b] text-zinc-50 h-80">
@@ -37,4 +37,4 @@ const Foo = () => {
   );
 };
 
-export default Foo;
+export default Footer;
