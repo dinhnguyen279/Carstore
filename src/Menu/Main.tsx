@@ -1,59 +1,34 @@
-const Mains = () => {
-  const CarsOne = [
-    {
-      image: "./images/EClass.png",
-      name: "E-Class",
-      price: "$100.000",
-    },
-    {
-      image: "./images/g63.png",
-      name: "G63 AMG ",
-      price: "$100.000",
-    },
-    {
-      image: "./images/GLC300.png",
-      name: "GLC 300",
-      price: "$100.000",
-    },
-    {
-      image: "./images/Mer-S.png",
-      name: "S-Class",
-      price: "$100.000",
-    },
-    {
-      image: "./images/Maybach.png",
-      name: "MayBach S650",
-      price: "$100.000",
-    },
-    {
-      image: "./images/AMG-GT.png",
-      name: "AMG GT",
-      price: "$100.000",
-    },
-  ];
+import React from "react";
+import Categories from "./Categories";
+import { CarsProducts } from "./data";
 
+interface Props {
+  CarsProducts: CarsProducts[];
+}
+const Mains: React.FC<Props> = (Products) => {
+  const Product = Products.CarsProducts;
   return (
-    <div className=" bg-[#212529]">
-      <div className="p-5 container mx-auto w-full h-full grid grid-cols-3 grid-rows-3 gap-10">
-        {CarsOne.map((value, key) => {
+    <div className="py-10">
+      <Categories />
+      <div className="container m-auto grid lg:grid-cols-3 grid-cols-2 gap-10 py-10">
+        {Product.map((value, key) => {
           return (
             <div
               key={key}
-              className="text-center text-zinc-50 border-2 border-b-8 border-b-[#6a6c6ef0] border-zinc-50  hover:bg-[#43464a]"
+              className="flex flex-col items-center text-center text-gray-500 transition ease-in hover:scale-110 cursor-pointer"
             >
-              <div className="w-full h-10">
-                <h1 className="font-sans text-3xl">{value.name}</h1>
-                <div className="text-2xl">
-                  <span>
-                    {value.price}
-                    <button className="border-2 w-32 rounded-lg bg-[#43464a] hover:bg-[#6a6c6ef0] ">
-                      BUY NOW
-                    </button>
-                  </span>
+              <div className="">
+                <h1 className="text-2xl">{value.name}</h1>
+                <div className="text-xl text-slate-400">
+                  <p>
+                    Giá từ {""}
+                    <span>{value.price} </span>
+                  </p>
                 </div>
               </div>
               <img
-                className="max-w-xs max-h-28 object-cover block overflow-auto"
+                loading="lazy"
+                className="object-cover w-3/4"
                 src={value.image}
                 alt="Hình minh họa"
               />

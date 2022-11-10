@@ -2,8 +2,9 @@ import React from "react";
 import Footer from "./Footers/Footer";
 import Header from "./Headers/Header";
 import Introduce from "./Introduces/Introduce";
+import Cars from "./Menu/data";
 import Mains from "./Menu/Main";
-import Navbar from "./Nav/Navbar";
+import Navbar from "./Navbars/Navbar";
 import images from "./Wappers/data";
 import Wapper from "./Wappers/Wapper";
 
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Introduce />
       <Wapper Images={images} />
-      <Mains />
+      <Mains CarsProducts={Cars} />
       <Footer />
     </div>
   );

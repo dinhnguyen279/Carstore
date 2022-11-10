@@ -8,23 +8,23 @@ const images: Images[] = [
     name: "EQS",
   },
   {
-    img: "./images/AclassAMG.png",
+    img: "./images/mecrEQS.png",
     name: "AMG",
   },
   {
-    img: "./images/Classnew.png",
+    img: "./images/mecrEQS.png",
     name: "C-Class",
   },
   {
-    img: "./images/img-wapper1.png",
+    img: "./images/mecrEQS.png",
     name: "C-Class",
   },
   {
-    img: "./images/img-wapper2.png",
+    img: "./images/mecrEQS.png",
     name: "C-Class",
   },
   {
-    img: "./images/img-wapper3.png",
+    img: "./images/mecrEQS.png",
     name: "C-Class",
   },
 ];
