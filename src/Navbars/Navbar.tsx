@@ -1,26 +1,52 @@
-import Navigator from "./Navigator";
+import React, { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
+import "./Navbar.css";
 
 const navbar = [
-  " HOME",
-  " SALE",
-  " HANDBAGS",
-  " WALLETS",
-  " ACCESSORIES",
-  " MAIN STORE",
-  " SHOES",
-  " VINTAGE",
-  " SERVICES",
-  " CONTACT US",
+  "Các dòng xe",
+  "Mua trực tuyến",
+  "Tư vấn mua xe",
+  "Dịch vụ",
+  "Thế giới Mercedes",
 ];
+
 const Navbar = () => {
+  const navRef = useRef<HTMLDivElement>(null);
+
+  const showNavbar = () => {
+    navRef.current?.classList.toggle("responsive-nav");
+  };
   return (
-    <nav className="bg-[#66696b] absolute top-15 left-0 right-0">
-      <ul className=" flex justify-between flex-wrap text-zinc-50 container mx-auto px-5 py-2 overflow-hidden ">
+    <div className="nav-main bg-[#66696b] relative">
+      <div
+        className="container m-auto flex justify-start text-center text-slate-200 text-lg"
+        ref={navRef}
+      >
+        <button className="nav-btn px-4 py-0 rounded-sm" onClick={showNavbar}>
+          <FontAwesomeIcon icon={faTimes} className=" text-2xl" />
+        </button>
         {navbar.map((value, key) => {
-          return <Navigator text={value} key={key + 1} />;
+          return (
+            <>
+              <a
+                href="/"
+                key={key + 1}
+                className="p-6 hover:text-white hover:no-underline"
+              >
+                {value}
+              </a>
+            </>
+          );
         })}
-      </ul>
-    </nav>
+      </div>
+      <button
+        className="nav-btn btn-fabars rounded-sm flex lg:hidden"
+        onClick={showNavbar}
+      >
+        <FontAwesomeIcon icon={faBars} className="text-2xl" />
+      </button>
+    </div>
   );
 };
 export default Navbar;

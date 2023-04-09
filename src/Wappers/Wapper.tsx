@@ -34,7 +34,7 @@ const Wapper: React.FC<Props> = (Images) => {
                 <img
                   src={value.img}
                   alt="Hình ảnh tượng trưng"
-                  className="block overflow-auto max-w-xs max-h-40 object-cover"
+                  className="object-cover w-full"
                 />
                 <div className="flex flex-col justify-between items-center bg-[#66696b] text-white text-xl w-full h-[20vh] mt-24 p-5">
                   <h1>{value.name}</h1>

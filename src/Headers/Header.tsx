@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="bg-[#212529]">
-      <div className="flex justify-between items-center container mx-auto p-4">
+      <div className="flex justify-between items-center container mx-auto py-6">
         <div className="absolute">
           <a className="flex justify-center items-center space-x-4" href="/">
             <img

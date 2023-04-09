@@ -1,0 +1,44 @@
+.nav-main .nav-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .btn-fabars {
+  }
+  .nav-main .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 15px;
+    background-color: aliceblue;
+    color: #000;
+  }
+  .nav-main div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateX(-100vw);
+    z-index: 100;
+    background: #000;
+  }
+
+  .nav-main div a {
+    display: flex;
+    letter-spacing: 3px;
+  }
+  .nav-main .responsive-nav {
+    transform: none;
+  }
+}
